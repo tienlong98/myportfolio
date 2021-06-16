@@ -47,18 +47,46 @@ html {
     }
 }
 
-@media only screen and(max-width:63.9375em) {
+.main_area {
+    .style-title {
+        margin-top: 15%;
+        margin-left: 15%;
+        .text-1 {
+            font-size: 3em;
+            font-family: 'KiwiMaru', cursive;
+        }
+        .text-2 {
+            font-size: 40px;
+            font-family: 'KiwiMaru', cursive;
+            .text-3 {
+                font-size: 32px;
+                font-family: 'KiwiMaru', cursive;
+            }
+        }
+        .text-4 {
+            font-size: 32px;
+            font-family: 'KiwiMaru', cursive;
+            .text-5 {
+                font-size: 40px;
+                font-family: 'KiwiMaru', cursive;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:61.9375em) {
     .header_area {
         .main_menu {
             .navbar-nav {
-                width: 50%;
+                width: 40%;
                 background-color: #F8EDED;
                 border: 4px solid #F8EDED;
-                box-shadow: 5px 5px 10px #E4BAD4;
+                box-shadow: 10px 10px 20px #E4BAD4;
                 text-align: center;
                 margin-top: 20px;
                 position: absolute;
                 right: 1em;
+                z-index: 999;
                 &::before {
                     content: '';
                     width: 0;
