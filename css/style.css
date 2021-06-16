@@ -49,7 +49,9 @@ html body {
   .header_area .main_menu .navbar-nav {
     width: 50%;
     background-color: #F8EDED;
-    border: 2px solid #558776;
+    border: 4px solid #F8EDED;
+    -webkit-box-shadow: 5px 5px 10px #E4BAD4;
+            box-shadow: 5px 5px 10px #E4BAD4;
     text-align: center;
     margin-top: 20px;
     position: absolute;
@@ -61,7 +63,7 @@ html body {
     height: 0;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    border-bottom: 24px solid #558776;
+    border-bottom: 24px solid #F8EDED;
     position: absolute;
     right: 16px;
     top: -25px;
