@@ -96,6 +96,108 @@ html body {
   border-radius: 50%;
 }
 
+.about_area .title-about {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.about_area .gachchan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about_area .gachchan .gachchan1 {
+  width: 50px;
+  height: 3px;
+  background-color: #E4BAD4;
+  margin-top: 20px;
+}
+
+.about_area .gachchan .title-gc {
+  padding: 0 5px 0 5px;
+}
+
+.about_area .about-left {
+  margin-top: 50px;
+}
+
+.about_area .about-left .img-about {
+  border-radius: 20px;
+}
+
+.about_area .about-right {
+  margin-top: 50px;
+}
+
+.about_area .about-right .style-about-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about_area .about-right .style-about-right .about-text-left {
+  width: 15%;
+  font-size: 25px;
+}
+
+.about_area .about-right .style-about-right .about-text-right {
+  width: 85%;
+  font-size: 25px;
+}
+
+.about_area .about-right .style-about-right .about-text-right .sushi {
+  width: 55px;
+  height: 42px;
+}
+
+.skill_area .title-skill {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.skill_area .gachchan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skill_area .gachchan .gachchan1 {
+  width: 50px;
+  height: 3px;
+  background-color: #E4BAD4;
+  margin-top: 20px;
+}
+
+.skill_area .gachchan .title-gc {
+  padding: 0 5px 0 5px;
+}
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 35px 0 35px 0;
+}
+
+.copyright .img-copyright {
+  width: 25px;
+  height: 25px;
+  margin-top: 7px;
+  margin-right: 5px;
+}
+
 @media only screen and (max-width: 61.9375em) {
   .header_area .main_menu .navbar-nav {
     width: 40%;
@@ -119,6 +221,16 @@ html body {
     position: absolute;
     right: 16px;
     top: -25px;
+  }
+  .about_area .about-right .style-about-right .about-text-left {
+    font-size: 17px;
+  }
+  .about_area .about-right .style-about-right .about-text-right {
+    font-size: 15px;
+  }
+  .about_area .about-right .style-about-right .about-text-right .sushi {
+    width: 30px;
+    height: 22.91px;
   }
 }
 
@@ -165,7 +277,7 @@ html body {
   }
 }
 
-@media only screen and (min-width: 35.9375em) and (max-width: 63.9375em) {
+@media only screen and (min-width: 35.9375em) and (max-width: 61.9375em) {
   .main_area .style-title .top-left .text-1 {
     font-size: 25px;
   }
@@ -188,6 +300,26 @@ html body {
     font-size: 20px;
     border-radius: 10px;
     padding: 10px;
+  }
+  .about_area .about-right .style-about-right .about-text-left {
+    font-size: 20px;
+  }
+  .about_area .about-right .style-about-right .about-text-right {
+    font-size: 18px;
+  }
+  .about_area .about-right .style-about-right .about-text-right .sushi {
+    width: 45px;
+    height: 34.36px;
+  }
+}
+
+@media only screen and (max-width: 47.9375em) {
+  .about-left .img-about {
+    width: 50%;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,24 @@
 @import url(./font.css);
+@mixin css-gachchan {
+    display: flex;
+    justify-content: center;
+    .gachchan1 {
+        width: 50px;
+        height: 3px;
+        background-color: #E4BAD4;
+        margin-top: 20px;
+    }
+    .title-gc {
+        padding: 0 5px 0 5px;
+    }
+}
+
+@mixin title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+$title-right:50px;
 html {
     body {
         background-color: #F8EDED;
@@ -87,6 +107,61 @@ html {
     }
 }
 
+.about_area {
+    .title-about {
+        @include title();
+    }
+    .gachchan {
+        @include css-gachchan();
+    }
+    .about-left {
+        margin-top: 50px;
+        .img-about {
+            border-radius: 20px;
+        }
+    }
+    .about-right {
+        margin-top: 50px;
+        .style-about-right {
+            display: flex;
+            flex-wrap: wrap;
+            .about-text-left {
+                width: 15%;
+                font-size: 25px;
+            }
+            .about-text-right {
+                width: 85%;
+                font-size: 25px;
+                .sushi {
+                    width: 55px;
+                    height: 42px;
+                }
+            }
+        }
+    }
+}
+
+.skill_area {
+    .title-skill {
+        @include title();
+    }
+    .gachchan {
+        @include css-gachchan();
+    }
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    padding: 35px 0 35px 0;
+    .img-copyright {
+        width: 25px;
+        height: 25px;
+        margin-top: 7px;
+        margin-right: 5px;
+    }
+}
+
 @media only screen and(max-width:61.9375em) {
     .header_area {
         .main_menu {
@@ -110,6 +185,22 @@ html {
                     position: absolute;
                     right: 16px;
                     top: -25px;
+                }
+            }
+        }
+    }
+    .about_area {
+        .about-right {
+            .style-about-right {
+                .about-text-left {
+                    font-size: 17px;
+                }
+                .about-text-right {
+                    font-size: 15px;
+                    .sushi {
+                        width: 30px;
+                        height: 22.91px;
+                    }
                 }
             }
         }
@@ -158,7 +249,7 @@ html {
     }
 }
 
-@media only screen and (min-width:35.9375em) and (max-width:63.9375em) {
+@media only screen and (min-width:35.9375em) and (max-width:61.9375em) {
     .main_area {
         .style-title {
             .top-left {
@@ -186,6 +277,33 @@ html {
                     }
                 }
             }
+        }
+    }
+    .about_area {
+        .about-right {
+            .style-about-right {
+                .about-text-left {
+                    font-size: 20px;
+                }
+                .about-text-right {
+                    font-size: 18px;
+                    .sushi {
+                        width: 45px;
+                        height: 34.36px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 47.9375em) {
+    .about-left {
+        .img-about {
+            width: 50%;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 }
