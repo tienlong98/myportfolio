@@ -6,10 +6,10 @@ html body {
           box-sizing: border-box;
   width: 100%;
   height: 100%;
+  font-family: 'HuiFont', cursive;
 }
 
 .header_area .main_menu .navbar-brand {
-  font-family: 'HuiFont', cursive;
   color: #558776;
   font-size: 1.8em;
 }
@@ -19,7 +19,6 @@ html body {
 }
 
 .header_area .main_menu .nav-item .nav-link {
-  font-family: 'HuiFont', cursive;
   font-size: 1.8em;
   color: #333;
 }
@@ -45,34 +44,56 @@ html body {
   opacity: 1;
 }
 
+.main_area {
+  margin-top: 3em;
+}
+
 .main_area .style-title {
-  margin-top: 15%;
-  margin-left: 15%;
+  position: relative;
 }
 
-.main_area .style-title .text-1 {
+.main_area .style-title .top-left {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.main_area .style-title .top-left .text-1 {
   font-size: 3em;
-  font-family: 'KiwiMaru', cursive;
 }
 
-.main_area .style-title .text-2 {
+.main_area .style-title .top-left .text-2 {
   font-size: 40px;
-  font-family: 'KiwiMaru', cursive;
 }
 
-.main_area .style-title .text-2 .text-3 {
+.main_area .style-title .top-left .text-2 .text-3 {
   font-size: 32px;
-  font-family: 'KiwiMaru', cursive;
 }
 
-.main_area .style-title .text-4 {
+.main_area .style-title .top-left .text-4 {
   font-size: 32px;
-  font-family: 'KiwiMaru', cursive;
 }
 
-.main_area .style-title .text-4 .text-5 {
+.main_area .style-title .top-left .text-4 .text-5 {
   font-size: 40px;
-  font-family: 'KiwiMaru', cursive;
+}
+
+.main_area .style-title .top-left .download-cv {
+  margin-top: 50px;
+}
+
+.main_area .style-title .top-left .download-cv .css-cv {
+  font-size: 25px;
+  color: #333;
+  text-decoration: none;
+  border: 2px solid #E4BAD4;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.main_area .img-css {
+  border-radius: 50%;
 }
 
 @media only screen and (max-width: 61.9375em) {
@@ -98,6 +119,75 @@ html body {
     position: absolute;
     right: 16px;
     top: -25px;
+  }
+}
+
+@media only screen and (max-width: 35.9375em) {
+  .main_area .style-title {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .main_area .style-title .top-left {
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+  }
+  .main_area .style-title .top-left .text-1 {
+    font-size: 25px;
+  }
+  .main_area .style-title .top-left .text-2 {
+    font-size: 25px;
+  }
+  .main_area .style-title .top-left .text-2 .text-3 {
+    font-size: 22px;
+  }
+  .main_area .style-title .top-left .text-4 {
+    font-size: 20px;
+  }
+  .main_area .style-title .top-left .text-4 .text-5 {
+    font-size: 23px;
+  }
+  .main_area .style-title .top-left .download-cv {
+    margin-top: 25px;
+  }
+  .main_area .style-title .top-left .download-cv .css-cv {
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 7px;
+  }
+  .main_area .img-css {
+    max-width: 50%;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media only screen and (min-width: 35.9375em) and (max-width: 63.9375em) {
+  .main_area .style-title .top-left .text-1 {
+    font-size: 25px;
+  }
+  .main_area .style-title .top-left .text-2 {
+    font-size: 25px;
+  }
+  .main_area .style-title .top-left .text-2 .text-3 {
+    font-size: 22px;
+  }
+  .main_area .style-title .top-left .text-4 {
+    font-size: 22px;
+  }
+  .main_area .style-title .top-left .text-4 .text-5 {
+    font-size: 25px;
+  }
+  .main_area .style-title .top-left .download-cv {
+    margin-top: 30px;
+  }
+  .main_area .style-title .top-left .download-cv .css-cv {
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
