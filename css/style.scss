@@ -18,7 +18,28 @@
     margin-top: 50px;
 }
 
-$title-right:50px;
+@mixin sakura-title {
+    background: url(../images/sakura.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@mixin hover-img {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: #558776;
+        opacity: 0;
+    }
+}
+
 html {
     body {
         background-color: #F8EDED;
@@ -30,6 +51,7 @@ html {
     }
 }
 
+// MENU
 .header_area {
     .main_menu {
         .navbar-brand {
@@ -66,6 +88,7 @@ html {
     }
 }
 
+//Banner
 .main_area {
     margin-top: 3em;
     .style-title {
@@ -107,6 +130,7 @@ html {
     }
 }
 
+//About
 .about_area {
     .title-about {
         @include title();
@@ -141,6 +165,7 @@ html {
     }
 }
 
+//Skill
 .skill_area {
     .title-skill {
         @include title();
@@ -148,8 +173,120 @@ html {
     .gachchan {
         @include css-gachchan();
     }
+    .sakura-line {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        .sakura-img {
+            @include sakura-title();
+            width: 25px;
+            height: auto;
+        }
+    }
+    .skiru-skill {
+        display: flex;
+        justify-content: space-between;
+        .skiru-left {
+            display: flex;
+            width: 40%;
+            margin-top: 15px;
+            .icon-img {
+                width: 40px;
+                height: auto;
+                margin-right: 15px;
+            }
+        }
+        .skiru-right {
+            width: 60%;
+            .skiru-line {
+                height: 15px;
+                width: 100%;
+                position: relative;
+                background: #E4BAD4;
+                border-radius: 5px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    background: #558776;
+                }
+            }
+            .html {
+                &::before {
+                    width: 90%;
+                }
+            }
+            .scss {
+                &::before {
+                    width: 80%;
+                }
+            }
+            .js {
+                &::before {
+                    width: 70%;
+                }
+            }
+            .php {
+                &::before {
+                    width: 50%;
+                }
+            }
+        }
+    }
 }
 
+//Work
+.work_area {
+    .title-skill {
+        @include title();
+    }
+    .gachchan {
+        @include css-gachchan();
+    }
+    .gird-left {
+        margin-top: 50px;
+        .img-work {
+            margin-bottom: 30px;
+            @include hover-img();
+            &:hover {
+                &::before {
+                    opacity: 0.4;
+                    transition: all linear 0.5s;
+                }
+            }
+            .css-img-work {
+                width: 100%;
+            }
+        }
+        .text-work {
+            display: none;
+            .css-text-work {}
+        }
+    }
+    .gird-right {
+        margin-top: 50px;
+        .img-work {
+            margin-bottom: 30px;
+            @include hover-img();
+            &:hover {
+                &::before {
+                    opacity: 0.4;
+                    transition: all linear 0.5s;
+                }
+            }
+            .css-img-work {
+                width: 100%;
+            }
+        }
+        .text-work {
+            display: none;
+            .css-text-work {}
+        }
+    }
+}
+
+//Copyright
 .copyright {
     display: flex;
     justify-content: center;
@@ -159,6 +296,16 @@ html {
         height: 25px;
         margin-top: 7px;
         margin-right: 5px;
+    }
+}
+
+//Banner
+.banner-footer {
+    display: flex;
+    justify-content: flex-end;
+    .css-banner {
+        width: 50%;
+        height: auto;
     }
 }
 
@@ -247,6 +394,24 @@ html {
             transform: translateX(-50%);
         }
     }
+    .skill_area {
+        .skiru-skill {
+            .skiru-left {
+                .icon-img {
+                    width: 27px;
+                    height: 26px;
+                }
+                h3 {
+                    font-size: 1em;
+                }
+            }
+            .skiru-right {
+                .skiru-line {
+                    height: 10px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (min-width:35.9375em) and (max-width:61.9375em) {
@@ -304,6 +469,21 @@ html {
             position: relative;
             left: 50%;
             transform: translateX(-50%);
+        }
+    }
+}
+
+@media only screen and(min-width:75em) {
+    .about_area {
+        .about-right {
+            .style-about-right {
+                .about-text-left {
+                    font-size: 30px;
+                }
+                .about-text-right {
+                    font-size: 30px;
+                }
+            }
         }
     }
 }

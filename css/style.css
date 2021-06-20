@@ -181,6 +181,175 @@ html body {
   padding: 0 5px 0 5px;
 }
 
+.skill_area .sakura-line {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.skill_area .sakura-line .sakura-img {
+  background: url(../images/sakura.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: auto;
+}
+
+.skill_area .skiru-skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skill_area .skiru-skill .skiru-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  margin-top: 15px;
+}
+
+.skill_area .skiru-skill .skiru-left .icon-img {
+  width: 40px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.skill_area .skiru-skill .skiru-right {
+  width: 60%;
+}
+
+.skill_area .skiru-skill .skiru-right .skiru-line {
+  height: 15px;
+  width: 100%;
+  position: relative;
+  background: #E4BAD4;
+  border-radius: 5px;
+}
+
+.skill_area .skiru-skill .skiru-right .skiru-line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #558776;
+}
+
+.skill_area .skiru-skill .skiru-right .html::before {
+  width: 90%;
+}
+
+.skill_area .skiru-skill .skiru-right .scss::before {
+  width: 80%;
+}
+
+.skill_area .skiru-skill .skiru-right .js::before {
+  width: 70%;
+}
+
+.skill_area .skiru-skill .skiru-right .php::before {
+  width: 50%;
+}
+
+.work_area .title-skill {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.work_area .gachchan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.work_area .gachchan .gachchan1 {
+  width: 50px;
+  height: 3px;
+  background-color: #E4BAD4;
+  margin-top: 20px;
+}
+
+.work_area .gachchan .title-gc {
+  padding: 0 5px 0 5px;
+}
+
+.work_area .gird-left {
+  margin-top: 50px;
+}
+
+.work_area .gird-left .img-work {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.work_area .gird-left .img-work::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #558776;
+  opacity: 0;
+}
+
+.work_area .gird-left .img-work:hover::before {
+  opacity: 0.4;
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+
+.work_area .gird-left .img-work .css-img-work {
+  width: 100%;
+}
+
+.work_area .gird-left .text-work {
+  display: none;
+}
+
+.work_area .gird-right {
+  margin-top: 50px;
+}
+
+.work_area .gird-right .img-work {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.work_area .gird-right .img-work::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #558776;
+  opacity: 0;
+}
+
+.work_area .gird-right .img-work:hover::before {
+  opacity: 0.4;
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+
+.work_area .gird-right .img-work .css-img-work {
+  width: 100%;
+}
+
+.work_area .gird-right .text-work {
+  display: none;
+}
+
 .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,6 +365,20 @@ html body {
   height: 25px;
   margin-top: 7px;
   margin-right: 5px;
+}
+
+.banner-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.banner-footer .css-banner {
+  width: 50%;
+  height: auto;
 }
 
 @media only screen and (max-width: 61.9375em) {
@@ -275,6 +458,16 @@ html body {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
+  .skill_area .skiru-skill .skiru-left .icon-img {
+    width: 27px;
+    height: 26px;
+  }
+  .skill_area .skiru-skill .skiru-left h3 {
+    font-size: 1em;
+  }
+  .skill_area .skiru-skill .skiru-right .skiru-line {
+    height: 10px;
+  }
 }
 
 @media only screen and (min-width: 35.9375em) and (max-width: 61.9375em) {
@@ -320,6 +513,15 @@ html body {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .about_area .about-right .style-about-right .about-text-left {
+    font-size: 30px;
+  }
+  .about_area .about-right .style-about-right .about-text-right {
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
