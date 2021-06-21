@@ -25,21 +25,6 @@
     background-size: contain;
 }
 
-@mixin hover-img {
-    position: relative;
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background: #558776;
-        opacity: 0;
-    }
-}
-
 html {
     body {
         background-color: #F8EDED;
@@ -247,41 +232,85 @@ html {
     .gird-left {
         margin-top: 50px;
         .img-work {
+            position: relative;
+            overflow: hidden;
             margin-bottom: 30px;
-            @include hover-img();
             &:hover {
-                &::before {
-                    opacity: 0.4;
-                    transition: all linear 0.5s;
+                .text-work {
+                    height: 20%;
+                }
+                .css-img-work {
+                    transform: scale(1.3);
+                }
+            }
+            .text-work {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: #558776;
+                overflow: hidden;
+                width: 100%;
+                height: 0;
+                transition: height 0.8s ease;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .css-text-work {
+                    text-align: center;
                 }
             }
             .css-img-work {
+                transition: transform 0.8s ease;
+                object-fit: cover;
+                object-position: center;
                 width: 100%;
+                height: auto;
+                cursor: pointer;
+                display: block;
             }
-        }
-        .text-work {
-            display: none;
-            .css-text-work {}
         }
     }
     .gird-right {
         margin-top: 50px;
         .img-work {
+            position: relative;
+            overflow: hidden;
             margin-bottom: 30px;
-            @include hover-img();
             &:hover {
-                &::before {
-                    opacity: 0.4;
-                    transition: all linear 0.5s;
+                .text-work {
+                    height: 20%;
+                }
+                .css-img-work {
+                    transform: scale(1.3);
+                }
+            }
+            .text-work {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: #558776;
+                overflow: hidden;
+                width: 100%;
+                height: 0;
+                transition: height 0.8s ease;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .css-text-work {
+                    text-align: center;
                 }
             }
             .css-img-work {
+                transition: transform 0.8s ease;
+                object-fit: cover;
+                object-position: center;
                 width: 100%;
+                height: auto;
+                cursor: pointer;
+                display: block;
             }
-        }
-        .text-work {
-            display: none;
-            .css-text-work {}
         }
     }
 }
