@@ -26,6 +26,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     body {
         background-color: #F8EDED;
         margin: 0%;
@@ -36,8 +37,47 @@ html {
     }
 }
 
+//show-up-btn
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background-color: #F8EDED;
+    border: 3px solid #E4BAD4;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 40px;
+    color: #333;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    &:hover {
+        background-color: #558776;
+    }
+}
+
+.show {
+    bottom: 30px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
 // MENU
 .header_area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.5s ease;
+    background-color: #F8EDED;
+    z-index: 999;
     .main_menu {
         .navbar-brand {
             color: #558776;
@@ -75,7 +115,7 @@ html {
 
 //Banner
 .main_area {
-    margin-top: 3em;
+    margin-top: 5em;
     .style-title {
         position: relative;
         .top-left {
