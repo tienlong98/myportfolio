@@ -473,6 +473,57 @@ html body {
   padding: 0 5px 0 5px;
 }
 
+.contact_area .contact-left {
+  margin-top: 50px;
+}
+
+.contact_area .contact-left .title-info {
+  margin-bottom: 40px;
+}
+
+.contact_area .contact-left .contact-info .icon-c-info {
+  width: 15%;
+}
+
+.contact_area .contact-left .contact-info .info-naiyo {
+  width: 85%;
+}
+
+.contact_area .contact-left .contact-info .info-naiyo p {
+  font-size: 25px;
+}
+
+.contact_area .contact-right {
+  margin-top: 50px;
+}
+
+.contact_area .contact-right .title-message {
+  margin-bottom: 20px;
+}
+
+.contact_area .contact-right form {
+  font-size: 25px;
+}
+
+.contact_area .contact-right form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact_area .contact-right form .fix-w1 {
+  width: 48%;
+}
+
+.contact_area .contact-right form .css-btn-contact {
+  border: 2px solid #E4BAD4;
+  background-color: #F8EDED;
+  padding: 5px 35px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
 .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -626,6 +677,12 @@ html body {
   .about_area .about-right .style-about-right .about-text-right .sushi {
     width: 45px;
     height: 34.36px;
+  }
+  .contact_area .contact-left .contact-info .info-naiyo p {
+    font-size: 20px;
+  }
+  .contact_area .contact-right form {
+    font-size: 20px;
   }
 }
 

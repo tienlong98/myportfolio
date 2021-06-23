@@ -363,6 +363,46 @@ html {
     .gachchan {
         @include css-gachchan();
     }
+    .contact-left {
+        margin-top: 50px;
+        .title-info {
+            margin-bottom: 40px;
+        }
+        .contact-info {
+            .icon-c-info {
+                width: 15%;
+            }
+            .info-naiyo {
+                width: 85%;
+                p {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    .contact-right {
+        margin-top: 50px;
+        .title-message {
+            margin-bottom: 20px;
+        }
+        form {
+            font-size: 25px;
+            .form-group {
+                margin-bottom: 1.5rem;
+            }
+            .fix-w1 {
+                width: 48%;
+            }
+            .css-btn-contact {
+                border: 2px solid #E4BAD4;
+                background-color: #F8EDED;
+                padding: 5px 35px;
+                border-radius: 15px;
+                display: flex;
+                margin: 0 auto;
+            }
+        }
+    }
 }
 
 //Copyright
@@ -536,6 +576,22 @@ html {
                         height: 34.36px;
                     }
                 }
+            }
+        }
+    }
+    .contact_area {
+        .contact-left {
+            .contact-info {
+                .info-naiyo {
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .contact-right {
+            form {
+                font-size: 20px;
             }
         }
     }
