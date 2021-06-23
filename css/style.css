@@ -448,6 +448,31 @@ html body {
   display: block;
 }
 
+.contact_area .title-skill {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact_area .gachchan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact_area .gachchan .gachchan1 {
+  width: 50px;
+  height: 3px;
+  background-color: #E4BAD4;
+  margin-top: 20px;
+}
+
+.contact_area .gachchan .title-gc {
+  padding: 0 5px 0 5px;
+}
+
 .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -504,7 +529,7 @@ html body {
     top: -25px;
   }
   .about_area .about-right .style-about-right .about-text-left {
-    font-size: 17px;
+    font-size: 15px;
   }
   .about_area .about-right .style-about-right .about-text-right {
     font-size: 15px;

@@ -355,6 +355,16 @@ html {
     }
 }
 
+//Contact
+.contact_area {
+    .title-skill {
+        @include title();
+    }
+    .gachchan {
+        @include css-gachchan();
+    }
+}
+
 //Copyright
 .copyright {
     display: flex;
@@ -409,7 +419,7 @@ html {
         .about-right {
             .style-about-right {
                 .about-text-left {
-                    font-size: 17px;
+                    font-size: 15px;
                 }
                 .about-text-right {
                     font-size: 15px;
