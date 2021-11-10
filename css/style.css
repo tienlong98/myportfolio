@@ -371,6 +371,7 @@ html body {
 
 .work_area .gird-left .img-work .text-work .css-text-work {
   text-align: center;
+  color: #F8EDED;
 }
 
 .work_area .gird-left .img-work .css-img-work {
@@ -435,7 +436,7 @@ html body {
 
 .work_area .gird-right .img-work .text-work .css-text-work {
   text-align: center;
-  color: black;
+  color: #F8EDED;
 }
 
 .work_area .gird-right .img-work .css-img-work {
