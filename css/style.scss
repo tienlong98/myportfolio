@@ -323,6 +323,8 @@ html {
                 }
                 .css-img-work {
                     transform: scale(1.3);
+                    object-fit: cover;
+                    object-position: center;
                 }
             }
             .text-work {
@@ -340,6 +342,7 @@ html {
                 justify-content: center;
                 .css-text-work {
                     text-align: center;
+                    color: black;
                 }
             }
             .css-img-work {
@@ -351,6 +354,9 @@ html {
                 cursor: pointer;
                 display: block;
             }
+        }
+        .fix-height {
+            height: 260px;
         }
     }
 }
@@ -428,6 +434,72 @@ html {
     }
 }
 
+//Work_product
+.content-portfolio {
+    margin-top: 200px;
+    .btn-sakuhin {
+        font-size: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        display: inline-block;
+        text-align: center;
+        width: 270px;
+        font-weight: bold;
+        padding: 14px 0px;
+        border: 3px solid #E4BAD4;
+        border-radius: 2px;
+        position: relative;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+        z-index: 2;
+        color: #333;
+        font-weight: 600;
+        &:before {
+            transition: 0.5s all ease;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            opacity: 0;
+            content: '';
+            background-color: #E4BAD4;
+            z-index: -1;
+        }
+        &:hover {
+            text-decoration: none;
+            color: white;
+            &:before {
+                transition: 0.5s all ease;
+                left: 0;
+                right: 0;
+                opacity: 1;
+            }
+        }
+        &:focus {
+            &:before {
+                transition: 0.5s all ease;
+                left: 0;
+                right: 0;
+                opacity: 1;
+            }
+        }
+    }
+    .content-detail {
+        .title-pt {
+            img {
+                width: 25px;
+                height: 25px;
+                object-fit: cover;
+                object-position: center;
+            }
+            p {
+                font-size: 20px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
 @media only screen and(max-width:61.9375em) {
     .header_area {
         .main_menu {
@@ -468,6 +540,13 @@ html {
                         height: 22.91px;
                     }
                 }
+            }
+        }
+    }
+    .work_area {
+        .gird-right {
+            .fix-height {
+                height: 155px !important;
             }
         }
     }
@@ -618,6 +697,16 @@ html {
                 .about-text-right {
                     font-size: 30px;
                 }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:75em) {
+    .work_area {
+        .gird-right {
+            .fix-height {
+                height: 215px;
             }
         }
     }
